@@ -157,20 +157,49 @@ $(document).ready(function () {
         }
       );
   });
-  /*.fixed-menu*/
-  $(".fixed-menu .control .fa").click(function () {
-    $(".fixed-menu").animate(
-      {
-        width: 0,
-        padding: 0,
-      },
-      300
-    );
-    $(".fixed-menu .control").animate(
-      {
-        right: 0,
-      },
-      300
-    );
+  /*.fixed-menu add .menu-active*/
+  $(".fixed-menu .fa-gear").click(function () {
+    let fixedMenu = $(this).parent(".fixed-menu");
+    let body = $("body");
+    fixedMenu.toggleClass("menu-active");
+    if (fixedMenu.hasClass("menu-active")) {
+      body.animate(
+        {
+          paddingLeft: 0,
+        },
+        300
+      );
+      fixedMenu.animate(
+        {
+          left: "-" + fixedMenu.css("width"),
+        },
+        300
+      );
+    } else {
+      body.animate(
+        {
+          paddingLeft: fixedMenu.css("width"),
+        },
+        300
+      );
+      fixedMenu.animate(
+        {
+          left: 0,
+        },
+        300
+      );
+    }
+  });
+  /*.themes start*/
+  $(".themes-color").click(function () {
+    $(this).siblings().removeClass("bgColor txtColor");
+    $(this).addClass("bgColor txtColor");
+    $(".bgColor").css({
+      backgroundColor: $(this).data("background"),
+    });
+    $(".txtColor").css({
+      color: $(this).data("text"),
+    });
+    console.log()
   });
 });

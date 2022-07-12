@@ -14,9 +14,8 @@ body {
   width: 200px;
   height: 100%;
   color: #e0e0e0;
-  padding: 10px;
   font-size: 20px;
-  background-color: #0077c0;
+  background-color: hsl(203, 100%, 38%);
   z-index: 20;
 }
 .fixed-menu .menu {
@@ -26,17 +25,15 @@ body {
 .fixed-menu .menu:hover {
   text-decoration: underline;
 }
-.fixed-menu .control {
-  position: relative;
+.fixed-menu .fa-gear {
+  position: absolute;
   width: 50px;
-  text-align: center;
-  top: -150px;
-  right: -208px;
+  top: 102px;
+  right: -44px;
+  text-align:right;
   background-color: #0077c0;
-  border-top-right-radius: 10px; 
-}
-.fixed-menu .control .fa {
-  padding: 5px;
+  border-top-right-radius: 10px;
+  padding: 10px;
   cursor: pointer;
 }
 /*.nav*/

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bgColor txtColor">
+    <!--=========.fixed-menu start===========-->
+      <div class="fixed-menu">
+        <div class="themes">
+          <ul>
+            <li class="themes-color" data-background="#E74C3C"
+            data-text="#ECF0F1"
+            ></li>
+            <li class="themes-color" data-background="#47EBE0"
+            data-text="#5E2C0B"></li>
+            <li class="themes-color" data-background="#1EBC61"
+            data-text="#FDE3A7"></li>
+            <li class="themes-color" data-background="#D87400"
+            data-text="#F1C40F"></li>
+          </ul>
+        </div>
+        <div class="menu">Change colors</div>
+        <div class="menu">testing color
+        </div>
+        <i class="fa fa-gear"></i>
+        <div class="menu">Important links</div>
+        <div class="menu">Testing links</div>
+      </div>
+    <!--=========.fixed-menu end===========-->
+    <!--=========.nav start===========-->
+    <ul class="nav">
+      <li class="nav-item1 list"  data-scroll="home"><a href="#">Home</a></li>
+      <li class="nav-item2 list" data-scroll="about">
+        <a href="#">About-us</a>
+      </li>
+      <li class="nav-item3 list" data-scroll="services">
+        <a href="#">Services</a>
+      </li>
+      <li class="nav-item4 list" data-scroll="solutions">
+        <a href="#">Solutions</a>
+      </li>
+      <li class="nav-item5 list" data-scroll="products">
+        <a href="#">Products</a>
+      </li>
+      <li class="nav-item6 list" data-scroll="contact">
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+    <!--=========.nav end===========-->
+    <!--=========.show-popup start===========-->
+    <div class="show-popup">
+      <button class="show-btn" data-popup="first-pop">show popup</button>
+    </div>
+    <div class="show-popup">
+      <button class="show-btn"data-popup="second-pop">show popup</button>
+    </div>
+    <!--=========.show-popup end===========-->
+    <!--=========.button-effects start===========-->
+    <div class="button-effects effect1">
+      <button class="button-effect1 btn">
+        <span class="color">from Left</span>
+      </button>
+    </div>
+    <div class="button-effects effect2">
+      <button class="button-effect2 btn">
+        <span class="color">from top</span>
+      </button>
+    </div>
+    <div class="button-effects effect3">
+      <button class="button-effec31 btn">
+        <span class="color">broder from Left</span>
+      </button>
+    </div>
+    <div class="button-effects effect4">
+      <button class="button-effect4 btn">
+        <span class="color">broder from top</span>
+      </button>
+    </div>
+    <!--=========.button-effects end===========-->
+    <!--=========.animated-progress start===========-->
+    <div class="animated-progress">
+      <div class="progress">
+        <span data-percent="48"></span>
+      </div>
+      <div class="progress">
+        <span data-percent="70"></span>
+      </div>
+      <div class="progress">
+        <span data-percent="90"></span>
+      </div>
+    </div>
+    <!--=========.animated-progress end===========-->
+    <!--=========.sections start===========-->
+    <div class="content">
+      <div id="home" class="section">
+        <h2 class="bgColor txtColor">Home</h2>
+      </div>
+      <div id="about" class="section">
+        <h2>About</h2>
+      </div>
+      <div id="services" class="section">
+        <h2>Services</h2>
+      </div>
+      <div id="solutions" class="section">
+        <h2>Solutions</h2>
+      </div>
+      <div id="products" class="section">
+        <h2>Products</h2>
+      </div>
+      <div id="contact" class="section">
+        <h2>Contact</h2>
+      </div>
+    </div>
+    <i class="fa fa-arrow-up up" aria-hidden="true"></i>
+    <!--=========.sections end===========-->
+    <!--popup start-->
+    <div class="popup first-pop" data-scroll="first">
+      <div class="popup-inner">
+        <h3>1st popup</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa iusto
+          magnam illo id explicabo, laborum ex assumenda nobis perspiciatis
+          debitis?
+        </p>
+        <button class="inner-show-btn">close</button>
+      </div>
+    </div>
+    <div class="popup second-pop" data-scroll="second"/>
+      <div class="popup-inner">
+        <h3>2nd popup</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa iusto
+          magnam illo id explicabo, laborum ex assumenda nobis perspiciatis
+          debitis?
+        </p>
+        <button class="inner-show-btn">close</button>
+      </div>
+    </div>
+    <!--popup end-->
+    <script src="../jquery-3.6.0.min.js"></script>
+    <script src="plugins.js"></script>
+  </body>
+</html>
