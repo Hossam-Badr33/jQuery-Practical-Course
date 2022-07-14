@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  $(".content *").css({
-    paddingTop: $(".nav").innerHeight() - 30,
+  $(".content .section").css({
+    paddingTop: $(".nav").innerHeight(),
   });
   $(".list").click(function (e) {
     e.preventDefault();
@@ -190,7 +190,7 @@ $(document).ready(function () {
       );
     }
   });
-  /*.themes start*/
+  /*.themes */
   $(".themes-color").click(function () {
     $(this).siblings().removeClass("bgColor txtColor");
     $(this).addClass("bgColor txtColor");
@@ -200,6 +200,17 @@ $(document).ready(function () {
     $(".txtColor").css({
       color: $(this).data("text"),
     });
-    console.log()
+    console.log();
+  });
+  /*.gallery*/
+  $(".gallery .list-albumes img").on("click", function () {
+    let basicImg = $(".gallery .basic-frame img");
+    basicImg.attr("src", $(this).attr("src"));
+    $(this).css({
+      transform: "scaleY(1.5)"
+    });
+    $(this).siblings("img").css ({
+      transform: "scaleY(1)"
+    })
   });
 });
