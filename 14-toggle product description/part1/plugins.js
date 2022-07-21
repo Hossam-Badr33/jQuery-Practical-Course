@@ -227,7 +227,6 @@ $(document).ready(function () {
     maxWidth: itemMaxWidth,
   });
   let basicImg = $(".gallery .basic-frame img");
-  /////////////////////here
   $(".gallery .list-albumes img").on("click", function () {
     $(this).addClass("forArrow").siblings("img").removeClass("forArrow");
     basicImg
@@ -261,5 +260,17 @@ $(document).ready(function () {
   $(".fa-product").on("click", function () {
     $(this).parent().next(".show-product-details").toggleClass("product-fade");
     $(this).toggleClass("fa-plus fa-minus");
+  });
+  $(".fa-item").on("click", function () {
+    $(this).parent().next(".show-item-details").toggleClass("item-fade");
+    $(this).toggleClass("fa-plus fa-minus");
+  });
+  $(".fa-list, .fa-th-large").click(function () {
+    $(this)
+      .parent(".choose-list-grid")
+      .next(".toggle-item-container")
+      .removeClass("list grid")
+      .addClass($(this).data("choose"));
+    $(this).addClass("red").siblings().removeClass("red");
   });
 });
